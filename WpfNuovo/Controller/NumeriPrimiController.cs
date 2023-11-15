@@ -14,6 +14,7 @@ namespace WpfNuovo.Controller
 
         }
 
+
         public static int CalcoloSincrono(int stop, int start = 1)
         {
             int contatore = 0;
