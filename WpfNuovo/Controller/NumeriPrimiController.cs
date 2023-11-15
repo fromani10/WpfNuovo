@@ -13,6 +13,7 @@ namespace WpfNuovo.Controller
             return Task.Run(() => CalcoloSincrono(stop, start));
 
         }
+
         public static int CalcoloSincrono(int stop, int start = 1)
         {
             int contatore = 0;
