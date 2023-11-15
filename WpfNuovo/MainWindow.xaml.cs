@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfNuovo.ViewModel;
 
 namespace WpfNuovo
 {
@@ -20,14 +21,17 @@ namespace WpfNuovo
     /// </summary>
     public partial class MainWindow : Window
     {
+        MainWindowViewModel vm;
         public MainWindow()
         {
             InitializeComponent();
+            vm= new MainWindowViewModel();
+            DataContext = vm;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
-
+          await  vm.Calcola();
         }
     }
 }
