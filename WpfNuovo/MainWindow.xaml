@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions></Grid.RowDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="1"   Content="{Binding Risultato}" FontSize="80" FontWeight="Bold" ></Label>
+        <Button Grid.Row="2"  Click="Button_Click"></Button>
+        
     </Grid>
 </Window>
